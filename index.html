@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOFY ATELIER | Digital Art Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="#" class="logo">TOFY <span>ATELIER.</span></a>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#gallery">EXHIBITION</a>
+            <a href="#about">ABOUT</a>
+        </nav>
+
+        <a href="#gallery" class="nav-button">ENTER WORLD ↗</a>
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="eyebrow">
+                    <span class="live-dot"></span>
+                    DIGITAL ART EXPERIENCE / 2026
+                </div>
+
+                <h1>
+                    ART BEYOND<br>
+                    <span>DIMENSIONS.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Enter a new dimension of creativity.
+                    Discover a collection of artistic visions,
+                    innovative designs and applied arts.
+                </p>
+
+                <a href="#gallery" class="main-button">
+                    EXPLORE EXHIBITION <span>↗</span>
+                </a>
+
+                <div class="hero-credits">
+                    <div>
+                        <small>WEBSITE OWNER</small>
+                        <strong>ENG. ZIAD TAHA</strong>
+                    </div>
+
+                    <div>
+                        <small>ARTWORKS BY</small>
+                        <strong>ENG. TOFY SARHAN</strong>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="orbit orbit-one"></div>
+                <div class="orbit orbit-two"></div>
+
+                <div class="visual-core">
+                    <div class="core-inner"></div>
+                </div>
+
+                <div class="floating-label label-top">
+                    CREATIVE VISION
+                </div>
+
+                <div class="floating-label label-bottom">
+                    ART / DESIGN / FUTURE
+                </div>
+
+                <div class="visual-number">01</div>
+
+            </div>
+
+            <div class="hero-footer">
+                <span>SCROLL TO DISCOVER</span>
+                <span>CAIRO / EGYPT</span>
+            </div>
+
+        </section>
+
+
+        <!-- INTRO -->
+        <section class="intro">
+            <div class="intro-small">A NEW WORLD OF CREATIVITY</div>
+
+            <h2>
+                Every artwork has a story.<br>
+                Every detail creates <span>magic.</span>
+            </h2>
+
+            <p>
+                Welcome to TOFY ATELIER, a digital space
+                dedicated to creativity, imagination and
+                the beauty of applied arts.
+            </p>
+        </section>
+
+
+        <!-- 3D GALLERY -->
+        <section id="gallery" class="gallery-section">
+
+            <div class="section-top">
+                <div>
+                    <span class="section-label">01 / VIRTUAL EXPERIENCE</span>
+                    <h2>THE <span>EXHIBITION.</span></h2>
+                </div>
+
+                <p>
+                    Explore the space.<br>
+                    Discover the artworks.
+                </p>
+            </div>
+
+            <div class="gallery-frame">
+
+                <div class="gallery-toolbar">
+                    <span>TOFY ATELIER / VIRTUAL MUSEUM</span>
+                    <span class="interaction-hint">
+                        DRAG TO EXPLORE · CLICK ARTWORK
+                    </span>
+                </div>
+
+                <div id="gallery-container"></div>
+
+                <div class="gallery-bottom">
+                    <span>INTERACTIVE 3D SPACE</span>
+                    <span>ART COLLECTION / 2026</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about-section" id="about">
+
+            <div class="section-label">02 / THE CREATIVE MINDS</div>
+
+            <h2>
+                BEHIND THE<br>
+                <span>ATELIER.</span>
+            </h2>
+
+            <div class="people-grid">
+
+                <article class="person-card">
+                    <span class="person-number">01</span>
+                    <span class="person-role">WEBSITE OWNER</span>
+                    <h3>Eng. Ziad Taha</h3>
+                    <p>
+                        The creator and owner of the
+                        TOFY ATELIER digital platform.
+                    </p>
+                    <div class="person-line"></div>
+                </article>
+
+                <article class="person-card">
+                    <span class="person-number">02</span>
+                    <span class="person-role">ARTWORKS CREATOR</span>
+                    <h3>Eng. Tofy Sarhan</h3>
+                    <p>
+                        The artist behind the creative
+                        projects and displayed artworks.
+                    </p>
+                    <div class="person-line"></div>
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <a href="#" class="logo">TOFY <span>ATELIER.</span></a>
+
+        <p>CREATIVITY HAS NO LIMITS.</p>
+
+        <div class="footer-credit">
+            CREATED BY ENG. ZIAD TAHA
+            <span>·</span>
+            ARTWORKS BY ENG. TOFY SARHAN
+        </div>
+
+        <small>© 2026 TOFY ATELIER. ALL RIGHTS RESERVED.</small>
+
+    </footer>
+
+
+    <!-- ARTWORK POPUP -->
+    <div id="projectModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-btn">×</button>
+
+            <img id="modalImage" src="" alt="Artwork">
+
+            <div class="modal-info">
+
+                <span>TOFY ATELIER / ART COLLECTION</span>
+
+                <h2 id="modalTitle">Project Name</h2>
+
+                <p id="modalDescription">
+                    Project Description
+                </p>
+
+                <small>ARTWORK BY ENG. TOFY SARHAN</small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
